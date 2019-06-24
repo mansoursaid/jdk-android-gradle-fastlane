@@ -48,3 +48,5 @@ ENV PATH=$PATH:$PWD/android-sdk-linux/platform-tools/
 RUN yes | android-sdk-linux/tools/bin/sdkmanager --licenses
 
 RUN gem install fastlane -NV
+
+RUN fastlane add_plugin download_file
