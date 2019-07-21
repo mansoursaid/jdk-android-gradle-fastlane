@@ -48,3 +48,7 @@ ENV PATH=$PATH:$PWD/android-sdk-linux/platform-tools/
 RUN yes | android-sdk-linux/tools/bin/sdkmanager --licenses
 
 RUN gem install fastlane -NV
+
+#install imagemagick for generating app icons
+
+RUN apt install imagemagick -y
