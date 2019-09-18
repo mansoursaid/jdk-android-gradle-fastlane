@@ -17,7 +17,7 @@ RUN unzip gradle.zip;
 
 RUN rm gradle.zip;
 
-RUN apt-get remove -y curl;
+# RUN apt-get remove -y curl;
 
 RUN locale-gen en_US.UTF-8
 
