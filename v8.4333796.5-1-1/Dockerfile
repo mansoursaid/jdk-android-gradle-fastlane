@@ -9,7 +9,7 @@ ENV GRADLE_VERSION 5.1.1
 # get gradle and supporting libs
 RUN apt-get update
 
-RUN apt-get install -y curl ruby-dev ruby libstdc++ libc-dev g++ make locales;
+RUN apt-get install -y curl ruby-dev ruby libstdc++6 libc-dev g++ make locales;
 
 RUN curl https://downloads.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip > gradle.zip;
 
